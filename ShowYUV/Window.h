@@ -16,11 +16,6 @@ private:
 private:
     // ウィンドウのハンドル
     GLFWwindow* m_pWindow;
-
-    // ウィンドウのサイズ
-    //GLuint m_width;
-    //GLuint m_height;
-    
     CRenderer* m_pRenderer;
 
 public:

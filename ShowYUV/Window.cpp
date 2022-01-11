@@ -84,7 +84,7 @@ void CWindow::InitOpenGL()
             throw std::runtime_error("Failed to initialize opengl using GLFW.");
         }
 
-        // OpenGL Version 3.2 Core Profile ‚ð‘I‘ð‚·‚é
+        // OpenGL Version 3.3 Core Profile ‚ð‘I‘ð‚·‚é
         glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, 3);
         glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR, 3);
         glfwWindowHint(GLFW_OPENGL_FORWARD_COMPAT, GL_TRUE);

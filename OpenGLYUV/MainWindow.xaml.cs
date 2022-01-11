@@ -35,7 +35,7 @@ namespace OpenGLYUV
         [System.Runtime.InteropServices.DllImport("../ShowYUV.dll")]
         private static extern int Render();
 
-        void CompositionTarget_Rendering(object sender, EventArgs e)
+        void CompositionTarget_Rendering(object? sender, EventArgs e)
         {
             int rc = Render();
             if (rc != 0)
