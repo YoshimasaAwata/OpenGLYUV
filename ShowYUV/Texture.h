@@ -15,7 +15,6 @@ private:
     GLubyte* m_pY;
     GLubyte* m_pU;
     GLubyte* m_pV;
-    GLuint* m_pRGB;
     GLuint m_width;
     GLuint m_height;
     GLuint m_size;

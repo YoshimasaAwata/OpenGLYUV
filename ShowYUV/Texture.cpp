@@ -11,7 +11,6 @@ CTexture::CTexture(const char* pFileName, GLuint width, GLuint height)
     , m_pY(nullptr)
     , m_pU(nullptr)
     , m_pV(nullptr)
-    , m_pRGB(nullptr)
     , m_width(width)
     , m_height(height)
     , m_size(width * height)
@@ -26,7 +25,6 @@ CTexture::CTexture(const char* pFileName, GLuint width, GLuint height)
     m_pY = new GLubyte[m_size];
     m_pU = new GLubyte[m_size / 4];
     m_pV = new GLubyte[m_size / 4];
-    m_pRGB = new GLuint[m_size];
 
     SetTextureAttribute();
 
@@ -51,10 +49,6 @@ CTexture::~CTexture()
     if (nullptr != m_pV)
     {
         delete[] m_pV;
-    }
-    if (nullptr != m_pRGB)
-    {
-        delete[] m_pRGB;
     }
     if (0 != m_textureIDY)
     {
